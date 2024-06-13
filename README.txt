@@ -1,10 +1,11 @@
 ﻿06/13/2024
+<<<<<<< HEAD
 Sriram Poovarfagavan
-Lakshman Deshar
-Riyanka Gandhi
+Laxman Deshar
+=======
 
 
-14:00
+1400 UTC
 
 Creating a New Git Repository
 
@@ -12,10 +13,10 @@ We started by creating a new Git repository in Visual Studio. This is particular
 
 Selected Git > Create Git Repository from the menu bar.
 In the Create a Git Repository dialog box, we entered the necessary information to initialize the repository.
-By default, the new repository is private, so we had the option to make it public. 
+By default, the new repository is private, so we made it PIBLIC. 
 
 
-14:10
+1410 UTC
 
 Cloning an Existing Git Repository
 
@@ -25,6 +26,26 @@ We accessed the Clone a Git Repository dialog box.
 Pasted the URL of the repository we wanted to clone into the Repository location section.
 Selected the desired disk location for the cloned repository.
 
-14:15
+1415 UTC
 
 Adding elements related to our company to the website
+Added relevant quote and Images.
+ 
+ 1420 UTC
+Ensured that the group members are as Contributors.
+
+1425 UTC
+Adjusted the text,Image size and other Layouts.
+Continued with adding information to the website
+
+1500 UTC
+Tried to create a New Scaffolded Item, but got error.
+
+1510 UTC
+Analysis indicate that there are errors in the models.
+Trying our best to correct them.
+
+
+
+
+
