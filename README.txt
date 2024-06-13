@@ -4,7 +4,7 @@ Lakshman Deshar
 Riyanka Gandhi
 
 
-1400
+1400 UTC
 
 Creating a New Git Repository
 
@@ -15,7 +15,7 @@ In the Create a Git Repository dialog box, we entered the necessary information 
 By default, the new repository is private, so we made it PIBLIC. 
 
 
-1410
+1410 UTC
 
 Cloning an Existing Git Repository
 
@@ -25,22 +25,22 @@ We accessed the Clone a Git Repository dialog box.
 Pasted the URL of the repository we wanted to clone into the Repository location section.
 Selected the desired disk location for the cloned repository.
 
-1415
+1415 UTC
 
 Adding elements related to our company to the website
 Added relevant quote and Images.
  
- 1420
+ 1420 UTC
 Ensured that the group members are as Contributors.
 
-1425
+1425 UTC
 Adjusted the text,Image size and other Layouts.
 Continued with adding information to the website
 
-1500
+1500 UTC
 Tried to create a New Scaffolded Item, but got error.
 
-1510
+1510 UTC
 Analysis indicate that there are errors in the models.
 Trying our best to correct them.
 
