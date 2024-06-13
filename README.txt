@@ -1,5 +1,4 @@
-﻿<<<<<<< HEAD
-Sriram Poovarfagavan
+﻿Sriram Poovaragavan
 Laxman Deshar
 Riyanka Gandhi
 
