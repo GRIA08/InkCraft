@@ -28,3 +28,12 @@ Selected the desired disk location for the cloned repository.
 14:15
 
 Adding elements related to our company to the website
+Added relevant quote and Images.
+ 
+ 14:20
+Ensured that the group members are as Contributors.
+
+14:25
+Adjusted the text,Image size and other Layouts.
+
+
