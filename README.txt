@@ -4,7 +4,7 @@ Lakshman Deshar
 Riyanka Gandhi
 
 
-14:00
+1400
 
 Creating a New Git Repository
 
@@ -15,7 +15,7 @@ In the Create a Git Repository dialog box, we entered the necessary information 
 By default, the new repository is private, so we made it PIBLIC. 
 
 
-14:10
+1410
 
 Cloning an Existing Git Repository
 
@@ -25,24 +25,26 @@ We accessed the Clone a Git Repository dialog box.
 Pasted the URL of the repository we wanted to clone into the Repository location section.
 Selected the desired disk location for the cloned repository.
 
-14:15
+1415
 
 Adding elements related to our company to the website
 Added relevant quote and Images.
  
- 14:20
+ 1420
 Ensured that the group members are as Contributors.
 
-14:25
+1425
 Adjusted the text,Image size and other Layouts.
 Continued with adding information to the website
 
-15:00
+1500
 Tried to create a New Scaffolded Item, but got error.
 
-15:10
+1510
 Analysis indicate that there are errors in the models.
-Tryuing our best to correct them.
+Trying our best to correct them.
+
+
 
 
 
