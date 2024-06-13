@@ -35,5 +35,14 @@ Ensured that the group members are as Contributors.
 
 14:25
 Adjusted the text,Image size and other Layouts.
+Continued with adding information to the website
+
+15:00
+Tried to create a New Scaffolded Item, but got error.
+
+15:10
+Analysis indicate that there are errors in the models.
+Tryuing our best to correct them.
+
 
 
