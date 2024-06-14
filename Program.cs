@@ -1,8 +1,11 @@
-using InkCraft.Data;
+﻿using InkCraft.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<InkCraftContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("InkCraftContext") ?? throw new InvalidOperationException("Connection string 'InkCraftContext' not found.")));
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
