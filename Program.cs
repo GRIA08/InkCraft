@@ -8,15 +8,17 @@ builder.Services.AddDbContext<InkCraftContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("InkCraftContext") ?? throw new InvalidOperationException("Connection string 'InkCraftContext' not found.")));
 
 // Add services to the container.
+builder.Services.AddControllersWithViews();
+
+// Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
+builder.Services.AddDbContext<InkCraftContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<ApplicationDbContext>();
-builder.Services.AddControllersWithViews();
-
+    .AddEntityFrameworkStores<InkCraftContext>();
+//builder.Services.AddControllersWithViews();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

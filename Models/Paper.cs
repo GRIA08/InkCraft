@@ -11,6 +11,5 @@ public class Paper
     public DateTime ImportDate { get; set; }
     public string? Color { get; set; }
     public decimal Price { get; set; }
-    //public string? Taste { get; set; }
-    // public string? Taste { get; set; }
+    
 }
