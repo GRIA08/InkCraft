@@ -1,6 +1,103 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        /* styles.css */
+        <style >
+        body {
+            font-family: 'Arial', sans-serif;
+            background: background-size:cover;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h2 {
+            color: #444;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        #about-us {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+            ul li {
+                background: #fff;
+                padding: 10px 20px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+                ul li::before {
+                    content: "•";
+                    color: #4CAF50;
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em;
+                }
+
+        .team-members {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .team-member {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+
+            .team-member h3 {
+                margin-top: 0;
+                color: #444;
+                font-size: 1.4em;
+            }
+
+            .team-member p {
+                font-size: 1em;
+                color: #666;
+            }
+
+        .highlighted-text {
+            color: #4CAF50; /* Green color for emphasis */
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - InkCraft</title>
@@ -9,6 +106,7 @@
     <link rel="stylesheet" href="~/InkCraft.styles.css" asp-append-version="true" />
 </head>
 <body>
+
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
@@ -26,7 +124,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Product">Product</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Papers" asp-action="">Product</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a>
