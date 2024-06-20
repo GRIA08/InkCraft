@@ -49,6 +49,13 @@ Trying our best to correct them.
 6/19/2024
 Added Database, we made some changes in css
 
+1810 UTC
+We added the Images to the website and adjusted the layout
+
+1900 UTC
+We are having trouble editing the seed data.
+
+
 
 
 
