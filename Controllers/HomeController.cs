@@ -17,6 +17,7 @@ namespace InkCraft.Controllers
         {
             return View();
         }
+        //Comment
 
         public IActionResult Privacy()
         {
