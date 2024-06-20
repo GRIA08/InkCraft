@@ -12,11 +12,16 @@
         body {
             margin: 0;
             font-family: 'Arial, sans-serif';
-            background-color: #f4f4f9;
+            background: url('~/img/bg.jpg') no-repeat center center fixed;
+            background-size: cover;
             color: #333;
         }
 
-       
+        .header {
+            background-color: transparent; /* Make the header background transparent */
+            padding: 20px;
+            text-align: center;
+        }
 
             .header .logo {
                 height: 300px;
@@ -27,11 +32,13 @@
             .header h1 {
                 margin: 10px 0 5px;
                 font-size: 2.5em;
+            text-align: center;
             }
 
             .header p {
                 margin: 0;
                 font-size: 1.2em;
+            text-align: center;
             }
 
         
@@ -99,7 +106,7 @@
 <body>
     <header class="header">
         <img src="~/img/lg.png" alt="InkCraft Logo" class="logo">
-        <h1>InkCraft</h1>
+        
         <p>Your Trusted Source for Quality Paper Products</p>
     </header>
    
@@ -159,8 +166,6 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <p>&copy; 2024 InkCraft. All rights reserved.</p>
-    </footer>
+    
 </body>
 </html>
