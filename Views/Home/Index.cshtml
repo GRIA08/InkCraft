@@ -2,16 +2,84 @@
     ViewData["Title"] = "INK CRAFT";
 }
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-
-    <h2> Where quality paper begins</h2>
-
-    <p> ONLINE printing Servie </p>
-
-    <div>
-        <h1>IMG</h1>
-        <img src="~/img/a1.jpg" alt="Sample Image" width="1200" height="600"   />
-    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INK CRAFT</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial, sans-serif';
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .header {
+            background-image: <img src="" alt="bg" />; /* Path to your background image */
+            background-size: cover; /* Ensure the image covers the entire header */
+            background-position: center; /* Center the background image */
+            padding: 20px;
+            text-align: center;
+            color: black; /* Ensure text is readable on the background image */
+        }
+        .header img {
+            height: 60px;
+            width: 150px; /* Adjust this value to increase/decrease horizontal size */
+        }
+        .header h1 {
+            margin: 10px 0 5px;
+            font-size: 2.5em;
+            color: black; /* Ensure the text is readable on the background image */
+        }
+        .header p {
+            margin: 0;
+            font-size: 1.2em;
+            color: black; /* Ensure the text is readable on the background image */
+        }
+        
+        .main {
+            padding: 40px;
+            text-align: center;
+        }
+        .main h2 {
+            font-size: 2em;
+            color: #333;
+        }
+        .main p {
+            font-size: 1.2em;
+            color: #666;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer p {
+            margin: 0;
+        }
+    </style>
 </head>
+<body>
+    <div class="header">
+        <img src="/img/logo.png" alt="logo">
+       
+        <p>Your Trusted Source for Quality Paper Products</p>
+    </div>
+   
+    <div class="main" id="home">
+        
+        <p>We specialize in providing the highest quality paper products for all your business and personal needs. From office supplies to custom printing solutions, our paper is crafted to meet the highest standards of excellence.</p>
+    </div>
+    
+</body>
+</html>
+
 
