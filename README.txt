@@ -64,6 +64,9 @@ Added content in the privacy page
 1245
 having trouble with Deployment, and we have started trouble shooting
 
+1420
+Still trying to deploy, error 500.30 occurs.
+
 
 
 
