@@ -16,7 +16,7 @@ namespace InkCraft.Controllers
             _context = context;
         }
 
-        // GET: Papers
+        // GET: Papers log
         public async Task<IActionResult> Index()
         {
             return View(await _context.Paper.ToListAsync());
