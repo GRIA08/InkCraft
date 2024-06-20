@@ -9,6 +9,6 @@
         public decimal Price { get; set; }
     }
 
-
+    //Comment
 }
 
