@@ -1,15 +1,14 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace InkCraft.Models;
-
-public class Paper
+﻿namespace InkCraft.Models
 {
+    public class Paper
+    {
+        public int Id { get; set; }
+        public string PaperType { get; set; }
+        public string Description { get; set; }
+        public int Quantity { get; set; }
+        public decimal Price { get; set; }
+    }
 
-    public int Id { get; set; }
-    public string? Origin { get; set; }
-    [DataType(DataType.Date)]
-    public DateTime ImportDate { get; set; }
-    public string? Color { get; set; }
-    public decimal Price { get; set; }
-    
+
 }
+

@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using InkCraft.Data;
 using InkCraft.Models;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace InkCraft.Controllers
 {
@@ -22,21 +19,20 @@ namespace InkCraft.Controllers
         // GET: Papers
         public async Task<IActionResult> Index()
         {
-              return _context.Paper != null ? 
-                          View(await _context.Paper.ToListAsync()) :
-                          Problem("Entity set 'InkCraftContext.Paper'  is null.");
+            return View(await _context.Paper.ToListAsync());
         }
 
         // GET: Papers/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Paper == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
             var paper = await _context.Paper
                 .FirstOrDefaultAsync(m => m.Id == id);
+
             if (paper == null)
             {
                 return NotFound();
@@ -52,11 +48,9 @@ namespace InkCraft.Controllers
         }
 
         // POST: Papers/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Origin,ImportDate,Color,Price")] Paper paper)
+        public async Task<IActionResult> Create([Bind("Id,PaperType,Description,Quantity,Price")] Paper paper)
         {
             if (ModelState.IsValid)
             {
@@ -70,7 +64,7 @@ namespace InkCraft.Controllers
         // GET: Papers/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Paper == null)
+            if (id == null)
             {
                 return NotFound();
             }
@@ -84,11 +78,9 @@ namespace InkCraft.Controllers
         }
 
         // POST: Papers/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Origin,ImportDate,Color,Price")] Paper paper)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,PaperType,Description,Quantity,Price")] Paper paper)
         {
             if (id != paper.Id)
             {
@@ -121,7 +113,7 @@ namespace InkCraft.Controllers
         // GET: Papers/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Paper == null)
+            if (id == null)
             {
                 return NotFound();
             }
@@ -141,23 +133,20 @@ namespace InkCraft.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Paper == null)
-            {
-                return Problem("Entity set 'InkCraftContext.Paper'  is null.");
-            }
             var paper = await _context.Paper.FindAsync(id);
-            if (paper != null)
+            if (paper == null)
             {
-                _context.Paper.Remove(paper);
+                return NotFound();
             }
-            
+
+            _context.Paper.Remove(paper);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool PaperExists(int id)
         {
-          return (_context.Paper?.Any(e => e.Id == id)).GetValueOrDefault();
+            return _context.Paper.Any(e => e.Id == id);
         }
     }
 }
