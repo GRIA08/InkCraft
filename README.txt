@@ -4,7 +4,7 @@ Riyanka Gandhi
 
 ==========
 
-
+2024-06-13
 1400 UTC
 
 Creating a New Git Repository
@@ -31,7 +31,7 @@ Selected the desired disk location for the cloned repository.
 Adding elements related to our company to the website
 Added relevant quote and Images.
  
- 1420 UTC
+1420 UTC
 Ensured that the group members are as Contributors.
 
 1425 UTC
@@ -45,8 +45,7 @@ Tried to create a New Scaffolded Item, but got error.
 Analysis indicate that there are errors in the models.
 Trying our best to correct them.
 
-
-6/19/2024
+2024-06-19
 Added Database, we made some changes in css
 
 1810 UTC
@@ -55,7 +54,7 @@ We added the Images to the website and adjusted the layout
 1900 UTC
 We are having trouble editing the seed data.
 
-6/20/2024
+2024-06-20
 1100 UTC
 edited seed data 
 
@@ -64,6 +63,9 @@ Added content in the privacy page
 
 1245
 have trouble with  
+
+
+
 
 
 
