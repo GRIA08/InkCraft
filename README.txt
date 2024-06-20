@@ -59,6 +59,12 @@ We are having trouble editing the seed data.
 1100 UTC
 edited seed data 
 
+1241 UTC
+Added content in the privacy page
+
+1245
+have trouble with  
+
 
 
 
