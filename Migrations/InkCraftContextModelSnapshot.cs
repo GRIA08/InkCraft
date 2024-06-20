@@ -48,6 +48,6 @@ namespace InkCraft.Migrations
                     b.ToTable("Paper");
                 });
 #pragma warning restore 612, 618
-        }
+        } //lol
     }
 }
