@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/InkCraft/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsDefaultConnection_CF98429333",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/inkcraftdb-server/databases/InkCraft_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:DefaultConnection",
+      "dynamicId": null
+    },
+    "mssql2": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/InkCraft/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsInkCraftContext_40AB754B54",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/inkcraftdb-server/databases/InkCraft_Product_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:InkCraftContext",
+      "dynamicId": null
+    }
+  }
+}
