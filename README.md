@@ -44,3 +44,7 @@ Tried to create a New Scaffolded Item, but got error.
 1510 UTC
 Analysis indicate that there are errors in the models.
 Trying our best to correct them.
+
+
+
+https://inkcraft.azurewebsites.net/
